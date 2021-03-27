@@ -12,7 +12,7 @@ const random = seedableRandom();
 
 ## Seeding with a phrase
 
-You can seed a number to generate the same output everytime.
+You can seed the function with a phrase to generate the same output.
 
 ```
 const random = seedableRandom('This is my passphrase');
@@ -20,5 +20,5 @@ const random = seedableRandom('This is my passphrase');
 
 ## Under the hood
 
-This module uses the Pearson has function to generate an 8 bit number. If the module is used without a phrase, the current EPOCH date is used as phrase.
+This module uses the Pearson hash function to generate an 8 bit number. If the module is used without a phrase, the current EPOCH date is used as phrase.
 
