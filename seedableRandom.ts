@@ -1,6 +1,6 @@
 'use strict'
 
-const pearsonHash = require("./dependencies/pearsonHash");
+import pearsonHash from "./dependencies/pearsonHash";
 
 function seedableRandom(phrase = null) {
   if(phrase && typeof phrase !== "string") throw new Error('The phrase must be a string');
@@ -8,4 +8,4 @@ function seedableRandom(phrase = null) {
   return pearsonHash(p) / 256;
 }
 
-module.exports = seedableRandom;
+export default seedableRandom;

@@ -1,6 +1,6 @@
 'use strict'
 
-function pearsonHash(phrase) {
+function pearsonHash(phrase: string): number {
   const randomizedTable = [
     245, 45, 185, 210, 133, 238, 255, 41, 218, 52, 36, 106, 44, 67, 201, 163,
     207, 242, 22, 235, 149, 192, 241, 76, 151, 187, 116, 167, 233, 99, 150, 179,
@@ -23,4 +23,4 @@ function pearsonHash(phrase) {
   return phrase.split('').reduce((hash, c) => randomizedTable[(hash + c.charCodeAt(0)) % (randomizedTable.length - 1)], phrase.length % (randomizedTable.length - 1));
 }
 
-module.exports = pearsonHash;
+export default pearsonHash;
