@@ -24,4 +24,4 @@ This module uses the pearson hash function to generate an 8 bit number. If the m
 
 ## Beware ☠
 
-The pearson hash-function only returns an 8 bit number. Therefore the random function is pretty discrete. It can 'only' return 255 possible values between 0 and 1.
+The pearson hash-function only returns an 8 bit number. Therefore the random function is pretty discrete. It can 'only' return 256 possible values between 0 and 1.
